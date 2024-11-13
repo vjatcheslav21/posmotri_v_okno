@@ -115,7 +115,7 @@ async function delay(ms) {
   });
 }
 
-// Промис, который резолвится, если видео целиком готово к проинрыванию без пауз
+// Промис, который резолвится, если видео целиком готово к проигрыванию без пауз
 
 async function waitForReadyVideo(video) {
   return await new Promise((resolve) => {
@@ -159,7 +159,7 @@ function appendCards({ baseUrl, dataArray, cardTmp, container }) {
   console.log('Сгенерировал карточки');
 }
 
-// Устанавливет внужное видео в контейнер ✅
+// Устанавливет нужное видео в контейнер ✅
 function setVideo({ baseUrl, video, videoUrl, posterUrl }) {
   video.setAttribute('src', `${baseUrl}${videoUrl}`);
   video.setAttribute('poster', `${baseUrl}${posterUrl}`);
